@@ -76,7 +76,63 @@
             <div id="info-pages">
                 <div class="page">
 					<p>&nbsp;&nbsp;&nbsp;Projects</p>
-                </div>
+					<ul>
+						<p class="tag">Serverless-Website-Frontend<br><span>Website: digitalden.cloud </span></p>
+						<ul>
+							<li>Frontend to digitalden.cloud. Built on AWS using SAM CLI for Infrastructure as Code and GitHub Actions for CI/CD. </li>
+							<li>Once code is pushed to my Github repo, Github actions are triggered which automates the deployment of files to an S3 bucket and the invalidation of the corresponding CloudFront distribution cache.</li>
+							<li>A simple, functional webpage that hosts multiple links that direct users to external websites. Webpage is written in HTML/JavaScript and is styled in CSS.</li>
+							<li>Domain registration gives a unique name for the webpage, which was then configured using Amazon Route 53 to route traffic to the domain. The webpage is secured with the HTTPS protocol, encrypting data between users' browsers and web server. A CloudFront distribution is configured, which caches the webpages content at edge locations around the world for improved speed and reliability.</li>
+							<br>
+						</ul>
+						<p class="tag">Serverless-Website-Backend<br><span>Website: digitalden.cloud </span></p>
+						<ul>
+							<li>Backend to digitalden.cloud. Built on AWS using SAM CLI for Infrastructure as Code and GitHub Actions for CI/CD. </li>
+							<li>Built on AWS using SAM CLI for IaC method and GitHub Actions for CI/CD. The pipeline consists of three jobs, infrastructure testing, build and deploy and integration testing, which are all executed in sequential order and If the tests pass, the SAM application gets packaged and deployed to AWS.</li>
+							<li>The website has a visitor counter that uses a DynamoDB database and a Lambda function written in Python3 to manage the count. The Lambda function is accessed through a REST API created with API Gateway, which is configured to use a "Lambda proxy" configuration. </li>
+							<li>The website uses a short JavaScript to fetch visitor count from the API endpoint and display it in the footer of the page. This architecture ensures that the visitor count is accurately tracked and avoids any concurrency issues.</li>
+							<br>
+						</ul>
+						<p class="tag">Cloud-Resume<br><span>Website: resume.denizyilmaz.cloud </span></p>
+						<ul>
+							<li>This website is built on AWS and hosted on S3. Terraform is used for Infrastructure as Code and AWS CodePipeline for CI/CD. </li>
+							<li></li>
+							<li></li>
+							<br>
+						</ul>
+						<p class="tag">Investigating AWS CloudTrail Logs to Identify Website Hackers<br><span>Website: digitalden.cloud </span></p>
+						<ul>
+							<li>Configured an AWS CloudTrail trail. Analysed CloudTrail logs by using Grep and AWS CloudTrail CLI commands.</li>
+							<li>Imported AWS CloudTrail log data into Amazon Athena. Ran queries in Athena to filter AWS CloudTrail log entries.</li>
+							<li>Resolved security concerns within the AWS account and on an EC2 instance.</li>
+							<br>
+						</ul>
+				</div>
+				<div class="page">
+					<p>&nbsp;&nbsp;&nbsp;Work Experience</p>
+					<ul>
+						<p class="tag">Digital Futures<br><span>Cloud Engineer engineer | <span>2022-now</span></span></p>
+						<ul>
+							<li>Training provided through the AWS Academy. Obtained the AWS Solutions Architect Associate, SysOps Administrator, Developer Associate and HashiCorp Terraform certification.</li>
+							<li>Developed a high level of technical competency and interpersonal skills required to work as an AWS cloud engineer within high-performing teams.</li>
+							<li>Developed the skills to design and implement available, cost-efficient, fault-tolerant, and scalable distributed systems on AWS. Learned to write, deploy and maintain cloud-based applications with application-level support skills, including DevOps. </li>
+							<li>Developed consulting skills aligned to delivery methodologies such as Agile.</li>
+							<br>
+						</ul>
+						<p class="tag">Cool Chile Co.<br><span>Account Manager | <span>2017-2021</span></span></p>
+						<ul>
+							<li>Responsible for the movement of goods, from taking a clients’ order to the delivery of the final product. </li>
+							<li>Used Sage software to raise invoices, create new accounts and add new products.</li>
+							<li>Developed long lasting relationships with customers and tended to new ones. Notable accounts brought in and maintained were Byron, Ocado and Wahaca.</li>
+							<li>Set up Salesforce and increased wholesale account sales.</li>
+							<li>Learned product photography and took all the product shots for the business.</li>
+							<br>
+						</ul>
+						<p class="tag">Legal Caseworker<br><span>Duncan Lewis Solicitors | <span>2015-2016</span></span></p>
+						<ul>
+							<li>Visited clients’ detained in immigration centres, took their instructions and assisted them with their legal cases. </li>
+							<li>Identified clients’ legal problems and offered solutions focusing on their best practical outcome, such as getting them released from detention on Temporary Admission into the UK,  stopping deportation flights, and lodging Human Rights claims. </li>
+						</ul>
 		</div>
 	</body>
 </html>
